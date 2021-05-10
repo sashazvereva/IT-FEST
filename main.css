@@ -1,0 +1,808 @@
+@font-face {
+	font-family: wf_ede16afb920c4f67b88200f92;
+	src: url("https://static.wixstatic.com/ufonts/8ff6ba_ede16afb920c4f67b88200f9236465de/woff2/file.woff2") format("woff2"),
+	url("https://static.wixstatic.com/ufonts/8ff6ba_ede16afb920c4f67b88200f9236465de/woff/file.woff") format("woff"),
+	url("https://static.wixstatic.com/ufonts/8ff6ba_ede16afb920c4f67b88200f9236465de/ttf/file.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: wf_3a7c021ef612481dabc174609;
+	src: url("https://static.wixstatic.com/ufonts/8ff6ba_3a7c021ef612481dabc17460920ae043/woff2/file.woff2") format("woff2"),
+	url("https://static.wixstatic.com/ufonts/8ff6ba_3a7c021ef612481dabc17460920ae043/woff/file.woff") format("woff"),
+	url("https://static.wixstatic.com/ufonts/8ff6ba_3a7c021ef612481dabc17460920ae043/ttf/file.ttf") format("ttf");
+}
+
+body {  
+	font-family: wf_3a7c021ef612481dabc174609;
+	src: url("https://static.wixstatic.com/ufonts/8ff6ba_3a7c021ef612481dabc17460920ae043/woff2/file.woff2") format("woff2");
+	width: 100%;
+   	font-size: 20px;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	background-color: #f8faff;
+}
+
+*,
+*:before
+*:after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	line-height: 1;
+	padding: 15px 0;
+}
+
+p, ul, li {
+	font-size: 20px;
+	font-family: wf_3a7c021ef612481dabc174609;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+
+p span {
+	font-weight: bold;
+}
+
+li span {
+	font-weight: bold;
+}
+
+/* Container / Контейнер */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: wf_3a7c021ef612481dabc174609;
+	padding: 0 15px;
+}
+
+/* Adaptability / Адаптивность */
+@media (max-width: 1200px) {
+	.container {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: none;
+	}
+}
+
+/* DUPLICATE CLASSES START / ПОВТОРЯЮЩИЕСЯ КЛАССЫ НАЧАЛО */
+/* Universal title / Универсальный заголовок */
+.title {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.1;
+}
+
+.title span {
+	padding: 5px 5px;
+	background: #73c0bb;
+}
+
+.text {
+	color: #1d1300;
+	margin: 0px 0px 30px 0px;
+    text-align: center;
+	font-family: wf_3a7c021ef612481dabc174609;
+	line-height: 1.5em;
+	padding: 20px 0;
+}
+
+.text span {
+	box-shadow: 0 5px 0 0#73c0bb;
+}
+
+/* Dividing line / Разделительная линия между блоками */
+.dividing_line {
+	margin: 45px auto;
+    background-color: #73c0bb;
+    height: 2px;
+	width: 300px;
+	align-items: center;
+}
+/* DUPLICATE CLASSES END / ПОВТОРЯЮЩИЕСЯ КЛАССЫ КОНЕЦ */
+
+
+
+
+
+
+/* HEADER START / НАЧАЛО ШАПКИ */
+/* Header / Шапка */
+.header {
+	padding: 10px 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-image: url("photo/background_intro2.png");
+	background-color: #000307dc;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_logo {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 25px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	line-height: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #95a4c9;
+	text-align: center;
+}
+
+
+/* Nav menu / Навигационное меню */
+.nav_title {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+    background-color: #01081400;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+	transition: color 0.2s linear;
+    cursor: pointer;
+}
+
+.nav_title:after {
+	position: absolute;
+	content: "";
+	display: block;
+    
+    width: 0%;
+	height: 2px;
+	background-color: #546eae;
+	opacity: 0;
+    transition: width 0.25s ease-in-out;
+}
+
+.nav_title:hover {
+	color: #546eae;
+}
+
+.nav_title:hover:after {
+	opacity: 1;
+}
+
+.nav_title:hover:after,
+.nav_title:focus:after {
+    width: calc(100% - 32px);
+}
+
+.nav_title2 {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+    background-color: #01081400;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    padding: 16px;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+	transition: color 0.2s linear;
+    cursor: pointer;
+}
+
+.nav_title2:hover {
+	color: #546eae;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+}
+
+.nav_link {
+	font-family: wf_3a7c021ef612481dabc174609;
+    font-size: 15px;
+
+    display: none;
+    position: absolute;
+    background-color: #000307e8;
+    min-width: 160px;
+    z-index: 1;
+
+    border-radius: 15px;
+    border: 2px;
+    border-color: #546eae;
+    border-style: solid;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+
+.nav_link a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_link a:hover {
+    background-color: #000307bd;
+    border-radius: 15px;
+    border-color: none;
+	color: #546eae;
+	transition: color 0.2s linear;
+}
+
+.nav:hover .nav_link {
+    display: block;
+}
+
+/* Docs / Документы */
+.docs {
+	padding-left: 20px;
+}
+
+.docs_elem {
+	display: inline-flex;
+	margin: 5px;
+}
+
+.docs_icon {
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+}
+
+/* Navigation (mail) / Навигация(почта) */
+.nav_link_info {
+	font-family: wf_3a7c021ef612481dabc174609;
+    font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin: 0 15px;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.2s linear;
+	margin: 10px;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.nav_link_info a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav_link_info:hover {
+	color: #546eae;
+}
+/* HEADER END / КОНЕЦ ШАПКИ */
+
+
+
+
+
+/* WRAPPER INTRO START / НАЧАЛО СЛАЙДЕРА С ИНТРО */
+/* Intro / Интро */
+.intro_title {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 90px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.1;
+}
+
+.intro_title span {
+	padding: 5px 10px;
+	background: #95a4c9;
+}
+
+.intro_words {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.intro_subtitle {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 35px;
+	font-weight: 400;
+	color: #000000;
+	text-align: center;
+	line-height: 70px;
+}
+
+.intro_subtitle span{
+	display: inline;
+	box-shadow: 0 8px 0 0#f2b5b2;
+}
+
+
+/* Slider / Слайдер */
+.wrapper {
+	padding: 30px;
+	min-height: 100%;
+	background-size: cover;
+}
+
+.parallax-slider_title {
+	color: #1d1300;
+	margin: 0px 0px 10px 0px;
+    text-align: center;
+	font-family: wf_3a7c021ef612481dabc174609;
+}
+
+.parallax-slider_text {
+	color: #1d1300;
+	margin: 0px 0px 30px 0px;
+    text-align: center;
+	font-family: wf_3a7c021ef612481dabc174609;
+	line-height: 1.5em;
+}
+
+.parallax-slider_text span {
+	box-shadow: 0 5px 0 0#f2b5b2;
+}
+
+.image-slider {
+	padding: 30px 0px 70px 0px;
+}
+
+.image-slider_image {
+	text-align: center;
+}
+
+.image-slider_image img{
+	max-width: 100%;
+    max-height: 450px;
+}
+
+/* Slider arrows / Стрелки слайдера */
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color: #546eae;
+    font-size: 80px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #546eae;
+    font-size: 80px;
+}
+
+.parallax-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+    background-color: #546eae;
+}
+
+/* Auto width slider / Автоширина слайдера */
+.image-slider .swiper-slide {
+	width: auto;
+}
+/* WRAPPER INTRO END / КОНЕЦ БЛОКА С СЛАЙДЕРОМ ИНТРО */
+
+
+
+
+
+/* PARTNERS START / НАЧАЛО ПАРТНЁРОВ */
+.partners {
+	margin: 0 auto;
+	padding-top: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #000000;
+	padding: 25px 0;	
+}
+
+.partners_item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.partners_item img {
+	object-fit: cover;
+	padding: 25px;
+	object-position: 50% 50%;
+}
+
+.partners_item_photo1 {
+	width: 274px;
+	height: 155px;
+}
+
+.partners_item_photo2 {
+	width: 154px;
+	height: 20px;
+}
+
+.partners_item_photo34 {
+	width: 150px;
+	height: 50px;
+}
+/* PARTNERS END / КОНЕЦ БЛОКА С ПАРТНЁРАМИ */
+
+
+
+
+
+/* SPACE LESSON START / НАЧАЛО КОСМИЧЕСКОГО УРОКА */
+.title_events {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.1;
+}
+
+.title_events span {
+	padding: 5px 5px;
+	background: #73c0bb;
+}
+
+/* Button result / Кнопка результатов */
+.button_result {
+	left: 30%;
+	margin: 0 auto ;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #000000;
+    position: relative;
+    font-size: 15px;
+	font-weight: bold;
+    letter-spacing: .3em;
+	font-family: wf_3a7c021ef612481dabc174609;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+	text-align: center;
+}
+.button_result:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #73c0bb;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+.button_result:hover:before {
+    transform: translate(4px, 4px);
+}
+/* SPACE LESSON END / КОНЕЦ КОСМИЧЕСКОГО УРОКА */
+
+
+
+
+
+/* AEROSPACE HACATON START / НАЧАЛО АЭРОКОСМИЧЕСКОГО ХАКАТОНА */
+/*  Информация о аэрохакатоне / Aerohacaton info */
+.aero_info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.aero_info_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	bottom: 120px;
+}
+
+.aero_info_img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aero_info_subtitle {
+	text-align: center;
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 25px;
+	padding: 10px 0;
+	font-weight: bold;
+
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.aero_info_text {
+	font-size: 20px;
+	margin-left: 150px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.aero_info_photo {
+	width: 370px;
+	height: 400px;
+	object-fit: cover;
+}
+
+/* Button Action / Кнопка действия */ 
+.button_action {
+	margin-bottom: 45px;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 60px;
+	padding: 0px 30px;
+	font-family: wf_3a7c021ef612481dabc174609;
+	font-size: 25px;
+	letter-spacing: 1px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+
+	color: #ffffff;
+	background-color: #95a4c9;
+	box-shadow: 0 6px 0px #546eae;
+	transition-duration: 300ms;
+
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.button_action:hover {
+	font-weight: bold;
+	top: 2px;
+	box-shadow: 0 3px 0px #f2b5b2;
+	background-color: #e4716c;
+}
+
+/* Button aero result / Кнопка результатов аэрокосмического хакатона */ 
+.button_aero_result {
+	top: 20px;
+	margin: auto 0;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #000000;
+    position: relative;
+    font-size: 15px;
+	font-weight: bold;
+    letter-spacing: .3em;
+	font-family: wf_3a7c021ef612481dabc174609;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.button_aero_result:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #546eae;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+.button_aero_result:hover:before {
+    transform: translate(4px, 4px);
+}
+/* AEROSPACE HACATON END / КОНЕЦ ЭРОКОСМИЧЕСКОГО ХАКАТОНА */
+
+
+
+
+
+
+/* CHALLENGE RUS SPACE START / НАЧАЛО ЧЕЛЛЕНДЖА РОССИЯ КОСМИЧЕСКАЯ */
+.button_challenge_result {
+	left: 35%;
+	margin: 0 auto ;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #000000;
+    position: relative;
+    font-size: 15px;
+	font-weight: bold;
+    letter-spacing: .3em;
+	font-family: wf_3a7c021ef612481dabc174609;
+    padding: 17px 34px 17px 39px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+	text-align: center;
+}
+.button_challenge_result:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #e4716c;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+.button_challenge_result:hover:before {
+    transform: translate(4px, 4px);
+}
+/* CHALLENGE RUS SPACE END / КОНЕЦ ЧЕЛЛЕНДЖА РОССИЯ КОСМИЧЕСКАЯ */
+
+
+
+
+
+
+/*  CONTACTS START / НАЧАЛО КОНТАКТОВ */
+.contacts {
+	margin: 0 auto;
+	padding-top: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #000000;
+	padding: 25px 0;
+}
+
+.contacts_items {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.contacts_elem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.contacts_block {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 100px;
+}
+
+.contacts_block_item {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	width: 50%;
+}
+
+.contacts_block_item_number {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 90px;
+	padding: 15px 0;
+	font-weight: 500;
+	color: #546eae;
+}
+
+.contacts_block_item_text {
+	margin-left: 30px;
+	text-align: center;
+}
+
+.contacts_icon {
+	width: 480px;
+	padding: 0 15px;
+	right: 100px;
+	position: relative;
+	object-fit: cover;
+}
+
+.contacts_email {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 25px;
+	font-weight: 400;
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	box-shadow: 0 6px 0 0#f2b5b2;
+}
+
+.contacts_email:hover {
+	color: #e4716c;
+	transition: color 0.2s linear;
+
+}
+/* CONTACTS END / КОНЕЦ КОНТАКТОВ */
+
+
+
+
+
+/* BASEMENT START / НАЧАЛО ПОДВАЛА */
+/* Basement / Подвал сайта */
+.basement {
+	object-fit: cover;
+	object-position: center;
+	background-image: url("photo/background_intro3.png");
+	background-size: cover;
+
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #000000;
+	padding: 25px 0;
+}
+
+.basement_title {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #95a4c9;
+	text-align: center;
+}
+
+.basement_subtitle {
+	position: relative;
+	font-family: wf_3a7c021ef612481dabc174609;
+	font-weight: 400;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	transition: color 0.2s linear;
+	cursor: pointer;
+}
+
+.basement_subtitle:hover {
+	color: #546eae;
+}
+/* BASEMENT END / КОНЕЦ ПОДВАЛА */
