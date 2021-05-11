@@ -172,51 +172,6 @@ h3 span {
     opacity: 1;
     transition-delay: .5s;
 }
-/* RESULTS END / КОНЕЦ РЕЗУЛЬТАТОВ */
-
-
-
-
-
-
-
-.dbl-border {
-    position: relative;
-    display: table;
-    margin: 50px auto;
- }
- .dbl-border img {
-    display: block;
-    width: 200px;
-    height: 150px;
- }
- .dbl-border:before, .dbl-border:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 100px;
-    height: 150px;
-    border: 2px solid #95a4c9;
- }
- .dbl-border:before {
-    top: -15px;
-    left: -15px;
- }
- .dbl-border:after {
-    right: -15px;
-    bottom: -15px;
- }
- .image-wrapper {
-    position: relative;
-    z-index: 2;
-    padding: 5px;
-    background: white;
-    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.1);
- }
-
-
-
-
 
 
 
