@@ -28,8 +28,12 @@ h3 span {
 }
 
 
+
+
+
+/* RESULTS START / НАЧАЛО РЕЗУЛЬТАТОВ */
 /* Button header / Кнопка шапки */
-.double-border-button {
+.button_header {
     text-transform: uppercase;
     display: inline-block;
     margin: 10px 20px;
@@ -43,7 +47,7 @@ h3 span {
     transition: .4s;
 }
 
-.double-border-button:after {
+.button_header:after {
     content: "";
     position: absolute;
     top: 0;
@@ -57,11 +61,15 @@ h3 span {
     transition: .4s;
 }
 
-.double-border-button:hover:after {
+.button_header:hover:after {
     border-color: #95a4c9;
     width: calc(100% - 10px);
     height: calc(100% + 10px);
 }
+/* RESULTS START / НАЧАЛО РЕЗУЛЬТАТОВ */
+
+
+
 
 
 /* RESULTS START / НАЧАЛО РЕЗУЛЬТАТОВ */
@@ -172,8 +180,109 @@ h3 span {
     opacity: 1;
     transition-delay: .5s;
 }
-
-
-
-
 /* RESULTS END / КОНЕЦ РЕЗУЛЬТАТОВ */
+
+
+
+
+
+
+/* ALL RESULT START / НАЧАЛО ВСЕХ РЕЗУЛЬТАТОВ */
+.all_result_item {
+    position: relative;
+    display: table;
+    margin: 50px auto;
+ }
+ .all_result_item img {
+    display: block;
+    width: 800px;
+    height: 470px;
+ }
+ .all_result_item:before, .all_result_item:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #95a4c9;
+ }
+ .all_result_item:before {
+    top: -15px;
+    left: -15px;
+ }
+ .all_result_item:after {
+    right: -15px;
+    bottom: -15px;
+ }
+ .all_result_image {
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+    background: white;
+    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.1);
+ }
+/* ALL RESULT END / КОНЕЦ ВСЕХ РЕЗУЛЬТАТОВ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.result_1 {
+	margin: 0 auto;
+    color: #000000;
+    border: 1px solid #000000;
+    position: relative;
+    font-size: 15px;
+	font-weight: bold;
+    letter-spacing: .3em;
+	font-family: wf_3a7c021ef612481dabc174609;
+    padding: 30px;
+    margin-top: 30px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+	text-align: center;
+}
+
+.result_1:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    background: #f9e96b;
+    z-index: -1;
+    transition: .25s ease;
+    transform: translate(0, 0);
+}
+
+.result_1_text {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result_1_text h2 {
+    padding: 0 20px;
+
+
+}
+
+
+.result_1_text_number {
+}
