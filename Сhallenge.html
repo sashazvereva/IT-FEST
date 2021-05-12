@@ -5,6 +5,7 @@
 	<meta charset="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="aero.css">
+	<link rel="stylesheet" type="text/css" href="challenge.css">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -26,9 +27,9 @@
 		<div class="header_inner">
 			<a class="header_logo" href="Fest.html">Аэрокосмический фестиваль</a>
 			<!-- Nav menu / Навигационное меню -->
-			<a class="nav_title2" data-goto=".about_aerohacaton">О хакаоне</a>
-			<a class="nav_title2" data-goto=".aerospace_hacaton">Партнёры</a>
-            <a class="nav_title2" data-goto=".result">Результаты</a>
+			<a class="nav_title2" data-goto=".about_aerohacaton">О челлендже</a>
+			<a class="nav_title2" data-goto=".result">Лучшие работы</a>
+            <a class="nav_title2" data-goto=".stat">Статистика</a>
 
 			<!-- Button header / Кнопка шапки -->
 			<button class="button_header" onclick="location='Fest.html'">Перейти к хакатону</button>
@@ -47,35 +48,17 @@
 		</h1>
 		<h2 class="intro_subtitle">
 			<span>
-				О хакатоне
+				О челлендже
 			</span>
 		</h2>
 		<p class="text">
-			Запиши видео о вкладе города или региона участника<br>в становление и развитие аэрокосмической отрасли!<br>
+			Подведём итоги челленджа, где необходимо было записать видео о вкладе города<br>или региона участника
+			в становление и развитие аэрокосмической отрасли!<br>
 			Работы представлялись в социальных сетях с хэштегами<br>
 			<span style="box-shadow: 0 5px 0 0#f2b5b2;">#космофест</span> 
 			<span style="box-shadow: 0 5px 0 0#f2b5b2;">#аэрокосмическийфестиваль</span> или 
 			<span style="box-shadow: 0 5px 0 0#f2b5b2;">#россиякосмическая</span>
 		</p>
-
-
-		<!-- Dividing line / +Разделительная линия между блоками -->
-		<div class="dividing_line" style="background-color: #f2b5b2;"></div>
-
-		<!-- AEROSPACE HACATON START / НАЧАЛО АЭРОКОСМИЧЕСКОГО ХАКАТОНА -->
-		<div class="aerospace_hacaton">
-			<h2 class="intro_subtitle">
-				<span>
-					Информация
-				</span>
-			</h2>
-			<p class="text">
-				Дополнительную информацию вы можете посмотреть на сайте 
-				<span>
-					<a class="text" style="text-decoration: none;" href="http://aerospacehackathonzvereva.tilda.ws">aerospacehackathonzvereva.tilda.ws</a>
-				</span>
-			</p>
-		<!-- AEROSPACE HACATON END / КОНЕЦ ЭРОКОСМИЧЕСКОГО ХАКАТОНА -->
 
 		<!-- Dividing line / +Разделительная линия между блоками -->
 		<div class="dividing_line" style="background-color: #f2b5b2;"></div>
@@ -88,28 +71,33 @@
 <div class="result">
 	<h2 class="intro_subtitle">
 		<span>
-			Результаты
+			Лучшие работы
 		</span>
 	</h2>
 
-	<p class="text">
+	<p class="text" style="padding-bottom: 0;">
 		<span>Наведите</span> чтобы посмотреть подробнее
+	</p>
+	<p class="text" style="padding-top: 0;">
+		<span>Кникните</span> чтобы посмотреть работу
 	</p>
 
 	<div class="portfolio-wrap">
 		<div class="portfolio-item">
 			<div class="portfolio-item-wrap">
-				<a href="">
+				<a href="https://vk.com/search?c%5Bper_page%5D=40&c%5Bq%5D=%23россиякосмическая&c%5Bsection%5D=statuses&w=wall-186271415_486">
 				<img src="photo/rocet.jpg">
 					<div class="portfolio-item-inner">
 						<div class="portfolio-heading">
 							<h3>1 место</h3>
 						</div>
 						<ul>
-							<h3>Команда 1</h3>
+						<h3>
+							<span>
+								РДШ МБОУ Кировская СОШ 5
+							</span>
+						</h3>
 							<h3>Участники:</h3>
-							<li>Иван Иванов</li>
-							<li>Иван Иванов</li>
 							<li>Иван Иванов</li>
 							<h3>Количество баллов: 
 								<span>100</span>
@@ -122,14 +110,18 @@
 	
 		<div class="portfolio-item">
 			<div class="portfolio-item-wrap">
-				<a href="">
+				<a href="https://vk.com/search?c%5Bper_page%5D=40&c%5Bq%5D=%23россиякосмическая&c%5Bsection%5D=statuses&w=wall-130663872_1800">
 				<img src="photo/rocet2.jpg">
 					<div class="portfolio-item-inner">
 						<div class="portfolio-heading">
 							<h3>2 место</h3>
 						</div>
 						<ul>
-							<h3>Команда 2</h3>
+							<h3>
+								<span>
+									Библиотека-филиал № 2 г. Донецк
+								</span>
+							</h3>
 							<h3>Участники:</h3>
 							<li>Иван Иванов</li>
 							<li>Иван Иванов</li>
@@ -145,18 +137,15 @@
 	
 		<div class="portfolio-item">
 			<div class="portfolio-item-wrap">
-				<a href="">
+				<a href="https://vk.com/search?c%5Bper_page%5D=40&c%5Bq%5D=%23россиякосмическая&c%5Bsection%5D=statuses&w=wall532290689_606">
 				<img src="photo/rocet3.jpg">
 					<div class="portfolio-item-inner">
 						<div class="portfolio-heading">
 							<h3>3 место</h3>
 						</div>
 						<ul>
-							<h3>Команда 3</h3>
 							<h3>Участники:</h3>
-							<li>Иван Иванов</li>
-							<li>Иван Иванов</li>
-							<li>Иван Иванов</li>
+							<li>Карен Арсенян</li>
 							<h3>Количество баллов: 
 								<span>85</span>
 							</h3>
@@ -188,6 +177,40 @@
 	<button class="button_action">Все результаты</button>
 </div>
 <!-- ALL RESULT END / КОНЕЦ ВСЕХ РЕЗУЛЬТАТОВ -->
+
+<!-- Dividing line / +Разделительная линия между блоками -->
+<div class="dividing_line" style="background-color: #f2b5b2;"></div>
+
+<!-- STAT START / НАЧАЛО СТАТИСТИКИ -->
+<div class="stat">
+	<div class="container"> 
+		<h2 class="intro_subtitle">
+			<span>
+				Статистика челленджа
+			</span>
+		</h2>
+
+		<div class="trek">
+			<img class="trek_img" src="photo/icons/teamwork.png" alt="">
+			<p class="text" style="padding-top: 50px;">
+				<span style="box-shadow: 0 5px 0 0#f2b5b2;"> 25 участников</span> 
+				приняли участие в челлендже<br>
+			</p>
+			<img class="trek_img" src="photo/icons/teamwork.png" alt="">
+		</div>
+		<div class="trek">
+			<img class="trek_img" src="photo/icons/pie-chart.png" alt="">
+			<p class="text" style="padding-top: 50px;">
+				Большую активность приняли учатия такие города, как 
+				<span style="box-shadow: 0 5px 0 0#f2b5b2;">Киров</span> и
+				<span style="box-shadow: 0 5px 0 0#f2b5b2;">Донецк</span>
+			</p>
+			<img class="trek_img" src="photo/icons/pie-chart.png" alt="">
+		</div>
+
+	</div>
+</div>
+<!-- STAT END / КОНЕЦ СТАТИСТИКИ -->
 
 <!-- BASEMENT START / НАЧАЛО ПОДВАЛА -->
 <div class="basement">

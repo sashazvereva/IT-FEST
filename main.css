@@ -54,6 +54,10 @@ li span {
 	font-weight: bold;
 }
 
+h3 span {
+	font-family: wfont_8ff6ba_ede16afb920c4f67b88200f9236465de,wf_ede16afb920c4f67b88200f92,orig_next_art_bold;
+}
+
 /* Container / Контейнер */
 .container {
 	max-width: 1200px;
@@ -206,6 +210,7 @@ li span {
     padding: 16px;
     font-size: 15px;
     border: none;
+	text-align: center;
     text-transform: uppercase;
 	transition: color 0.2s linear;
     cursor: pointer;
@@ -555,7 +560,6 @@ li span {
 
 .aero_info_text {
 	font-size: 20px;
-	margin-left: 150px;
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0);
